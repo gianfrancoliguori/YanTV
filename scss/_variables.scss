@@ -1,0 +1,13 @@
+// TIPOGRAFIA
+$myFont2: "Comfortaa", cursive;
+$myFont1: "Roboto", sans-serif;
+
+@mixin text-style {
+  font-family: $myFont1;
+  color: $color2;
+}
+
+// COLORES
+$color1: #fed24b;
+$color2: #fcfcfc;
+$color3: #000000;

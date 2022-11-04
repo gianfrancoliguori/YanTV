@@ -1,0 +1,65 @@
+@import "_variables";
+
+.iniciar-sesion {
+  margin-top: 59px;
+  height: 100vh;
+  background-image: radial-gradient(
+      circle,
+      rgba(0, 0, 0, 0.6) 0%,
+      rgba(0, 0, 0, 0.6) 50%
+    ),
+    url(../img/is/2001_fondo.jpg);
+  background-size: cover;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+}
+
+.iniciar-sesion-container {
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 15px;
+}
+
+.iniciar-sesion-texto {
+  color: $color1;
+  border-left: 3px solid $color1;
+  padding-left: 5px;
+  font-weight: bold;
+}
+
+.iniciar-sesion-recuerdame {
+  color: $color1;
+}
+
+.custom-control-input:checked {
+  background-color: $color1 !important;
+  border: 1px solid $color2;
+}
+
+.custom-control-input:checked:focus {
+  box-shadow: 0 0 0 1px $color3, 0 0 0 0.2rem rgba(254, 209, 75, 0.25);
+}
+.custom-control-input:focus {
+  box-shadow: 0 0 0 1px $color3, 0 0 0 0.2rem rgba(0, 0, 0, 0.25);
+}
+.custom-control-input:active {
+  background-color: rgba(254, 209, 75, 0.314);
+}
+
+.iniciar-sesion-btn {
+  font-family: $myFont1;
+  color: $color3;
+  font-size: 16px;
+  background-color: $color1;
+  border-radius: 5px;
+  border: 2px solid $color1;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 20px;
+  margin: 10px;
+}
+
+.iniciar-sesion-btn:hover {
+  color: $color1;
+  border: 2px solid $color1;
+  background-color: $color3;
+}

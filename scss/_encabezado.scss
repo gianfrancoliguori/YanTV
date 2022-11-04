@@ -1,0 +1,63 @@
+@import "_variables";
+.logo {
+  width: 100px;
+  height: 30px;
+}
+
+.navbar {
+  background-color: $color3;
+}
+
+.boton-ingresar:hover {
+  color: $color1;
+  border: 2px solid $color1;
+  background-color: $color3;
+}
+.boton-ingresar {
+  font-family: $myFont1;
+  color: $color3;
+  font-size: 16px;
+  background-color: $color1;
+  border-radius: 5px;
+  border: 2px solid $color3;
+}
+
+.texto {
+  @include text-style;
+  font-size: 16px;
+  border-bottom: 2px solid $color3;
+}
+
+nav .texto:hover {
+  color: $color1;
+}
+
+.activo {
+  color: $color1;
+  border-bottom: 2px solid $color1;
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(254, 210, 75)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+.custom-toggler.navbar-toggler {
+  border-color: $color1;
+}
+
+footer {
+  background-color: $color1;
+  padding: 3px;
+}
+footer p {
+  font-family: $myFont1;
+  color: $color3;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+footer p span {
+  color: $color1;
+  background-color: $color3;
+  padding: 3px 6px;
+  border-radius: 5px;
+}

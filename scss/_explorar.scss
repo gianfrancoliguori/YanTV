@@ -1,0 +1,113 @@
+@import "_variables";
+
+.margen-header {
+  margin-top: 59px;
+}
+
+.explorar-seccion1 {
+  background-image: url(../img/Explorar/starwars_fondo.jpg);
+  background-size: cover;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  height: 46vh;
+  border-bottom: 3px solid $color3;
+}
+
+.explorar-texto {
+  color: rgb(5, 181, 201);
+  font-family: $myFont1;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.slider-card-explorar {
+  width: 100px;
+  height: 150px;
+  position: relative;
+  &-img {
+    border: 1px solid $color2;
+  }
+
+  &-back {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.734);
+    position: absolute;
+    bottom: 0;
+    padding: 5px;
+    border: 2px solid $color1;
+    &-titulo {
+      font-family: $myFont1;
+      color: $color1;
+      font-size: 12px;
+      font-weight: bold;
+    }
+    &-año {
+      font-family: $myFont1;
+      color: $color1;
+      font-size: 10px;
+    }
+    &-boton {
+      font-size: 20px;
+      padding: 1px 3px;
+      font-family: $myFont1;
+      text-decoration: none;
+      background-color: $color3;
+      color: $color1;
+      border: 1px solid $color1;
+      border-radius: 25px;
+    }
+    &-boton:hover {
+      color: $color3;
+      background-color: $color1;
+      border: solid 1px $color3;
+    }
+  }
+}
+
+.slider-card-explorar:hover {
+  .slider-card-explorar-back {
+    display: flow-root;
+  }
+}
+
+.explorar-seccion1-img {
+  position: absolute;
+  top: 10px;
+  height: 780px;
+}
+
+.explorar-seccion2 {
+  background-image: url(../img/Explorar/indiana_fondo.jpg);
+  background-size: cover;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  height: 46vh;
+  border-top: 3px solid $color3;
+}
+.explorar2-texto {
+  color: $color2;
+  text-shadow: 0px 5px 5px $color3;
+}
+
+.explorar-seccion2-img {
+  position: absolute;
+  width: 50%;
+  height: 90%;
+}
+
+.explorar-seccion3 {
+  background-color: $color3;
+  height: 46vh;
+  border-top: 3px solid $color3;
+}
+
+.explorar-seccion3-img {
+  position: absolute;
+
+  height: 100%;
+}
+
+.explorar-texto3 {
+  color: $color2;
+  text-shadow: 0px 10px 15px #ad0303;
+}

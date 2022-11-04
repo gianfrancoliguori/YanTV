@@ -1,0 +1,82 @@
+@import "_variables";
+
+.subs-container {
+  margin-top: 59px;
+  background-image: radial-gradient(
+      circle,
+      rgba(0, 0, 0, 0.6) 0%,
+      rgba(0, 0, 0, 0.6) 50%
+    ),
+    url(../img/sus/2001_fondo.jpg);
+  background-size: cover;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+}
+
+.placa {
+  background: rgba(254, 210, 75, 0.4);
+  box-shadow: 0 8px 32px 0 rgba(43, 43, 43, 0.37);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  border-radius: 10px;
+
+  width: 90%;
+  &-titulo {
+    background-color: rgba(0, 0, 0, 0.37);
+    color: $color2;
+    font-family: $myFont2;
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 1px 1px 10px $color3;
+  }
+  &-precio {
+    color: $color2;
+    font-family: $myFont2;
+    font-size: 20px;
+  }
+  &-precio span {
+    font-weight: bold;
+    color: $color1;
+    text-shadow: 1px 1px 10px $color3;
+    font-size: 25px;
+  }
+  &-item {
+    color: $color2;
+    font-family: $myFont2;
+    font-size: 14px;
+  }
+  &-boton {
+    padding: 5px 80px;
+    font-family: $myFont2;
+    text-decoration: none;
+    color: $color1;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: $color3;
+    border-radius: 15px;
+    border: 2px solid $color1;
+    margin: 10px 0px;
+    &:hover {
+      color: $color3;
+      border: 2px solid $color3;
+      background-color: $color1;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .subs-container {
+    height: 100vh;
+  }
+  .placa {
+    width: 40%;
+    height: 80%;
+    & ul {
+      line-height: 250%;
+    }
+    &-boton {
+      position: absolute;
+      bottom: 20px;
+    }
+  }
+}
